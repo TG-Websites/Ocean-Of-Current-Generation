@@ -72,15 +72,16 @@
             <!-- Slide 1 -->
             <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
                 <img src="./assets/slide_1.png" alt="Banner image" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-black/50 flex flex-col justify-center items-start px-4 sm:px-12 lg:px-20 text-left">
+                <!-- Bottom text container -->
+                <div class="absolute bottom-12 left-0 w-full  px-4 sm:px-12 lg:px-20 py-6 text-left">
                     <h1 class="text-xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-snug">
-                        Reliable Power, Anytime, Anywhere
+                        Powerful Diesel Gensets for Uninterrupted Energy
                     </h1>
-                    <p class="text-gray-200 mb-5 max-w-md sm:max-w-lg text-sm sm:text-base">
-                        High-performance diesel generators built for unmatched durability, efficiency, and continuous
-                        backup power for homes, businesses, and industries.
+                    <p class="text-gray-200 mb-5 max-w-md sm:max-w-xl text-sm sm:text-base">
+                        Engineered with advanced technology, our diesel generators ensure reliable backup power,
+                        exceptional fuel efficiency, and long-lasting durability for businesses, homes, and industries.
                     </p>
+
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
                         <a href="./html/shop.html#cons"
                             class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
@@ -97,15 +98,17 @@
             <!-- Slide 2 -->
             <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
                 <img src="./assets/slide_3.jpg" alt="Banner image" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-black/50 flex flex-col justify-center items-start px-4 sm:px-12 lg:px-20 text-left">
+                <!-- Bottom text container -->
+                <div class="absolute bottom-12 left-0 w-full  px-4 sm:px-12 lg:px-20 py-6 text-left">
                     <h1 class="text-xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-snug">
-                        Harness Solar Energy with Ease
+                        Efficient Solar Solutions for a Greener Future
                     </h1>
                     <p class="text-gray-200 mb-5 max-w-md sm:max-w-xl text-sm sm:text-base">
-                        Premium solar panels engineered for efficiency, reliability, and sustainable energy for homes
-                        and businesses.
+                        High-performance solar panels designed to deliver clean, renewable energy with maximum
+                        efficiency,
+                        helping homes and businesses reduce costs and embrace sustainability.
                     </p>
+
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
                         <a href="./html/shop.html#cons"
                             class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
@@ -122,15 +125,17 @@
             <!-- Slide 3 -->
             <div class="w-full flex-shrink-0 relative h-[80vh] sm:h-[90vh] md:h-screen">
                 <img src="./assets/slide_2.png" alt="Banner image" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-black/50 flex flex-col justify-center items-start px-4 sm:px-12 lg:px-20 text-left">
+                <!-- Bottom text container -->
+                <div class="absolute bottom-12 left-0 w-full  px-4 sm:px-12 lg:px-20 py-6 text-left">
                     <h1 class="text-xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-snug">
-                        Clean & Reliable Gas Power
+                        Smart Gas Gensets for Cleaner Energy
                     </h1>
                     <p class="text-gray-200 mb-5 max-w-md sm:max-w-xl text-sm sm:text-base">
-                        Advanced gas-based generators delivering efficient, eco-friendly, and uninterrupted power for
-                        industries, offices, and homes.
+                        Eco-friendly gas generators built to deliver consistent, low-emission power with high
+                        efficiency,
+                        ideal for homes, offices, and industrial applications.
                     </p>
+
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
                         <a href="./html/shop.html#cons"
                             class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
@@ -152,9 +157,6 @@
         <img src="./assets/right.png" onclick="nextSlide()"
             class="absolute top-1/2 right-3 -translate-y-1/2 w-8 sm:w-10 cursor-pointer z-20 hidden sm:block">
     </div>
-
-
-
 
 
     <!-- why choose us -->
@@ -467,31 +469,33 @@
                 </p>
 
                 <!-- Mailto Form -->
-                <form action="mailto:alok09ax@gmail.com" method="GET" enctype="text/plain">
+                <form id="contactForm">
                     <div class="relative mb-4">
                         <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="Name"
+                        <input type="text" id="name" name="name"
                             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             required>
                     </div>
+
                     <div class="relative mb-4">
                         <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="Email"
+                        <input type="email" id="email" name="email"
                             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             required>
                     </div>
+
                     <div class="relative mb-4">
                         <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="Message"
+                        <textarea id="message" name="message"
                             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                             required></textarea>
                     </div>
-                    <button type="submit"
-                        class="text-white bg-primary border-0 py-2 px-6 focus:outline-none rounded-lg text-lg">
+
+                    <button type="button" id="sendButton"
+                        class="text-white bg-primary border-0 py-2 px-6 rounded-lg text-lg">
                         Send Message
                     </button>
                 </form>
-
                 <p class="text-xs text-gray-500 mt-3">
                     We’ll get back to you as soon as possible.
                 </p>
