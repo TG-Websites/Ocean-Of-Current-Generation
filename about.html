@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean of Current Generation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img src="assets/header.png" alt="YourCompany Logo" class="h-14 w-auto md:h-14 cursor-pointer">
+                    </a>
+                </div>
+
+
+                <!-- Menu Items (desktop) -->
+                <div class="hidden md:flex space-x-8 font-semibold text-gray-800">
+                    <a href="./index.html" class="relative py-2 px-1 hover:text-primary">Home</a>
+                    <a href="./about.html" class="relative py-2 px-1 hover:text-primary">About</a>
+                    <a href="#" class="relative py-2 px-1 hover:text-primary">Products</a>
+                    <a href="./contact.html" class="relative py-2 px-1 hover:text-primary">Contact us</a>
+                    <a href="#" class="relative py-2 px-1 hover:text-primary">Our Story</a>
+                    <button class="hidden sm:block py-2 px-3 bg-primary text-white rounded-md">Get in Touch</button>
+                </div>
+
+
+                <!-- Mobile Toggle Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 hover:text-gray-900">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="md:hidden hidden fixed inset-0 z-50 bg-white h-fit text-black flex flex-col px-3 py-3 transition-all duration-300">
+
+        <!-- Top bar with close button -->
+        <div class="flex justify-between mb-6">
+            <img src="assets/header.png" alt="Logo" class="h-10 w-auto cursor-pointer">
+            <button onclick="toggleMobileMenu()" class="text-black hover:text-white text-3xl">
+                <i class="fas fa-times"></i> <!-- cross icon -->
+            </button>
+        </div>
+
+        <!-- Menu links (row layout) -->
+        <div class="flex flex-col sm:flex-row gap-6 text-lg font-medium sm:divide-x sm:divide-gray-400">
+            <a href="./index.html" class="hover:text-linkhover transition px-3">Home</a>
+            <a href="./about.html" class="hover:text-linkhover transition px-3">About</a>
+            <a href="#" class="hover:text-linkhover transition px-3">Products</a>
+            <a href="./contact.html" class="hover:text-linkhover transition px-3">Contact us</a>
+            <a href="#" class="hover:text-linkhover transition px-3">Our Story</a>
+        </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="relative w-full h-80 flex items-center justify-start">
+        <!-- Background Image -->
+        <img src="./assets/image_5.jpg" alt="Contact Banner" class="absolute inset-0 w-full h-full ">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+        <!-- Text Content -->
+        <div class="relative left-20 text-start text-white">
+            <h1 class="text-6xl font-bold mb-2">About Us</h1>
+            <p class="text-xl pt-3">
+                <span class="font-semibold">Home</span>
+                <span class="mx-2 text-primary">|</span>
+                <span class="text-primary">About Us</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Side Images -->
+            <div class="relative">
+                <img src="./assets/slide_2.png" alt="Solar Panels" class="rounded-2xl w-full shadow-lg">
+                <img src="./assets/image_7.jpg" alt="Solar Roof"
+                    class="rounded-2xl w-1/3 shadow-lg absolute -bottom-10 -right-5">
+            </div>
+
+            <!-- Right Side Content -->
+            <div>
+                <p class="text-primary font-semibold flex items-center mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    ABOUT US
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reliable Power & Green Energy Solutions
+                </h2>
+
+                <p class="text-gray-600 mb-4">
+                    We specialize in providing complete energy solutions including <span class="font-semibold">Diesel &
+                        Gas
+                        Gensets</span> for reliable backup power and <span class="font-semibold">Solar Panel
+                        Installations</span> for
+                    sustainable and cost-effective energy. Our mission is to deliver quality products and services that
+                    keep your homes,
+                    industries, and businesses running without interruption.
+                </p>
+
+                <p class="text-gray-600 mb-6">
+                    With years of experience, we combine innovation and expertise to offer energy systems that are
+                    efficient, durable,
+                    and environmentally friendly. From small setups to large industrial projects, we ensure performance,
+                    safety, and
+                    round-the-clock support.
+                </p>
+
+                <!-- Features -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <p class="flex items-center text-gray-800 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Diesel & Gas Gensets
+                    </p>
+                    <p class="flex items-center text-gray-800 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Solar Panel Installations
+                    </p>
+                    <p class="flex items-center text-gray-800 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Hybrid Power Solutions
+                    </p>
+                    <p class="flex items-center text-gray-800 font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        24/7 Service & Support
+                    </p>
+                </div>
+
+                <!-- Button -->
+                <button class="bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-md">
+                    More About
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Our Work Process cards -->
+    <section class="max-w-7xl mx-auto px-3 py-16 text-center">
+        <!-- Section Heading -->
+        <p class="text-primary font-semibold flex justify-center items-center mb-2 uppercase tracking-wide">
+            <!-- You can replace this ⚡ with an icon if you want -->
+            <span class="mr-2">⚡</span> Our Latest Process
+        </p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Our Work Process</h2>
+
+        <!-- Steps -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-12 relative">
+
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center">
+                <div class="relative">
+                    <div class="bg-primary text-white w-28 h-28 flex items-center justify-center rounded-xl shadow-lg">
+                        <img src="./assets/icon_1.svg" alt="">
+                    </div>
+                    <span
+                        class="absolute -top-2 -right-2 bg-blue-600 text-white text-sm font-bold w-8 h-8 flex items-center justify-center rounded-full">01</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mt-4">Project Planning</h3>
+                <p class="text-gray-600 mt-2 text-sm md:text-base">
+                    We begin with detailed project planning, outlining goals, resources, and timelines to ensure smooth
+                    execution.
+                </p>
+                </p>
+            </div>
+
+            <img src="./assets/dash_1.svg" alt="" class="hidden md:block">
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center">
+                <div class="relative">
+                    <div class="bg-primary text-white w-28 h-28 flex items-center justify-center rounded-xl shadow-lg">
+                        <img src="./assets/icon_2.svg" alt="">
+                    </div>
+                    <span
+                        class="absolute -top-2 -right-2 bg-blue-600 text-white text-sm font-bold w-8 h-8 flex items-center justify-center rounded-full">02</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mt-4">Research &amp; Analysis</h3>
+                <p class="text-gray-600 mt-2 text-sm md:text-base">
+                    Our team conducts in-depth research and analysis to design efficient and sustainable solar
+                    solutions.
+                </p>
+                </p>
+            </div>
+
+            <img src="./assets/dash_2.svg" alt="" class="hidden md:block mt-3">
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center">
+                <div class="relative">
+                    <div class="bg-primary text-white w-28 h-28 flex items-center justify-center rounded-xl shadow-lg">
+                        <img src="./assets/icon_3.svg" alt="">
+                    </div>
+                    <span
+                        class="absolute -top-2 -right-2 bg-blue-600 text-white text-sm font-bold w-8 h-8 flex items-center justify-center rounded-full">03</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mt-4">Solar Installation</h3>
+                <p class="text-gray-600 mt-2 text-sm md:text-base">
+                    We carry out the solar installation with precision and quality, ensuring reliable performance for
+                    years to come.
+                </p>
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- video and thumbnail -->
+    <div class="max-w-7xl mx-auto p-6">
+        <div class="relative group overflow-hidden rounded-2xl">
+            <!-- Video Thumbnail -->
+            <img src="./assets/image_9.jpg" alt="Video Thumbnail"
+                class="w-full h-auto transform transition duration-500 group-hover:scale-105">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
+
+            <!-- Play Button -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <button onclick="openModal()"
+                    class="w-16 h-16 flex items-center justify-center rounded-full border-2 border-white text-white hover:scale-110 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="videoModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+        <div class="bg-black rounded-2xl overflow-hidden max-w-4xl w-full relative">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-3 right-3 text-white text-2xl">&times;</button>
+
+            <!-- Video Container (Aspect Ratio Fix) -->
+            <div class="w-full aspect-video">
+                <iframe id="videoPlayer" class="w-full h-full" src="" title="YouTube video player" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- progress -->
+    <section class="bg-white py-16">
+        <div class="container max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Side Content -->
+            <div>
+                <p class="text-primary font-semibold flex items-center mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    ENERGY PROGRESS
+                </p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Best Solution For Your Solar Energy
+                </h2>
+                <p class="text-gray-500">
+                    It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout.
+                </p>
+            </div>
+
+            <!-- Right Side Progress Bars -->
+            <div class="space-y-6">
+                <!-- Solar Panels -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-gray-900 font-semibold">Solar Panels</span>
+                        <span class="text-primary font-bold">95%</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                        <div class="bg-primary h-2 rounded-full" style="width:95%"></div>
+                    </div>
+                </div>
+
+                <!-- Hybrid Energy -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-gray-900 font-semibold">Hybrid Energy</span>
+                        <span class="text-primary font-bold">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                        <div class="bg-primary h-2 rounded-full" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <!-- Marketing -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-gray-900 font-semibold">Marketing</span>
+                        <span class="text-primary font-bold">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2">
+                        <div class="bg-primary h-2 rounded-full" style="width:70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cta section -->
+    <section class="py-12">
+        <div class="container max-w-7xl mx-auto px-6 ">
+            <div class="flex flex-col lg:flex-row items-center bg-gray-100 rounded-2xl overflow-hidden shadow-md">
+
+                <!-- Left Image -->
+                <div class="w-full lg:w-1/3">
+                    <img src="./assets/image_8.jpg" alt="Contact Us" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Right Content -->
+                <div class="w-full lg:w-2/3 flex items-center p-6 lg:p-10 relative">
+
+                    <!-- Call Icon -->
+                    <div class="absolute -left-10 top-1/2 transform -translate-y-1/2 hidden lg:flex">
+                        <div class="bg-primary text-white p-5 rounded-full shadow-lg border-4 border-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.21.2 2.42.57 3.54a1 1 0 01-.25 1.05l-2.2 2.2z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="ml-0 lg:ml-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                            Have Questions? <span class="text-primary">Call Us</span> +91 8130320826
+                        </h2>
+                        <p class="text-gray-600">
+                            It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white pt-12">
+        <div
+            class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center md:text-left">
+
+            <!-- Company Info -->
+            <div class="flex flex-col items-center md:items-start gap-5">
+                <img src="./assets/footer.png" alt="Logo" class="w-45">
+                <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                    Delivering solar, generator, and electrical solutions since 2018.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Products</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Products</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">Solar Panels</a></li>
+                    <li><a href="#" class="hover:underline">Generators</a></li>
+                    <li><a href="#" class="hover:underline">Electrical Items</a></li>
+                    <li><a href="#" class="hover:underline">Batteries & Storage</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <div class="space-y-2 text-sm md:text-base text-gray-300">
+                    <p><i class="fa-solid fa-house mr-2"></i>158, Sec 16 , Faridabad, Haryana 121002</p>
+                    <p><i class="fa-solid fa-phone mr-2"></i>+91 8130320826</p>
+                    <p><i class="fa-solid fa-envelope mr-2"></i>info@oceanofcurrentgenerations.com</p>
+                    <p><i class="fa-solid fa-building mr-2"></i>OCEAN OF CURRENT GENERATION (OPC) PRIVATE LIMITED</p>
+                    <p><i class="fa-solid fa-money-bill mr-2"></i>GST No.: 06AAECO6947K1ZZ</p>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center md:justify-start gap-5 mt-5 text-xl">
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+            class="flex flex-col md:flex-row px-6 md:px-10 py-4 mt-10 justify-center md:justify-between items-center gap-3 border-t border-gray-700 text-gray-400 text-sm">
+            <div>© 2025 Ocean of Current Generation. All rights reserved.</div>
+            <div>Design and Development By <span class="text-white">ThunderGits</span></div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>
