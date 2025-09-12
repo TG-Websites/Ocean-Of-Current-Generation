@@ -8,18 +8,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 ">
     <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./assets/header.png" class="h-14" alt="Flowbite Logo">
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
+                <a href="#product">
+                    <button type="button"
                     class="text-white bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center ">Get
                     started</button>
+                </a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
                     aria-controls="navbar-sticky" aria-expanded="false">
@@ -85,13 +93,13 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-                        <a href="./html/shop.html#cons"
+                        <a href="#product"
                             class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
                             For Business
                         </a>
-                        <a href="./html/shop.html#t&c"
+                        <a href="#contact"
                             class="px-5 py-2 sm:px-6 sm:py-3 border border-white text-white rounded-lg font-medium text-sm sm:text-base text-center">
-                            For Individual
+                            Get in Touch
                         </a>
                     </div>
                 </div>
@@ -113,13 +121,13 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-                        <a href="./html/shop.html#cons"
+                        <a href="#product"
                             class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
                             For Business
                         </a>
-                        <a href="./html/shop.html#t&c"
+                        <a href="#contact"
                             class="px-5 py-2 sm:px-6 sm:py-3 border border-white text-white rounded-lg font-medium text-sm sm:text-base text-center">
-                            For Individual
+                            Get in Touch
                         </a>
                     </div>
                 </div>
@@ -141,13 +149,13 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-                        <a href="./html/shop.html#cons"
+                        <a href="#product"
                             class="px-5 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 rounded-lg font-medium text-sm sm:text-base text-center">
                             For Business
                         </a>
-                        <a href="./html/shop.html#t&c"
+                        <a href="#contact"
                             class="px-5 py-2 sm:px-6 sm:py-3 border border-white text-white rounded-lg font-medium text-sm sm:text-base text-center">
-                            For Individual
+                            Get in Touch
                         </a>
                     </div>
                 </div>
@@ -262,7 +270,7 @@
                         <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Long-lasting
                             performance</li>
                     </ul>
-                    <a href="#"
+                    <a href="./about.html"
                         class="mt-auto inline-block bg-primary text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-600 transition">
                         Learn More
                     </a>
@@ -290,7 +298,7 @@
                         </li>
                     </ul>
 
-                    <a href="#"
+                    <a href="./about.html"
                         class="mt-auto inline-block bg-primary text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-600 transition">
                         Learn More
                     </a>
@@ -313,7 +321,7 @@
                         <li><i class="fas fa-check text-primary mr-2"></i> Compact & efficient design</li>
 
                     </ul>
-                    <a href="#"
+                    <a href="./about.html"
                         class="mt-auto inline-block bg-primary text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-600 transition">
                         Learn More
                     </a>
@@ -351,7 +359,7 @@
                         with clean, dependable, and innovative energy solutions for a better tomorrow.
                     </p>
 
-                    <a href="#" class="inline-block px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-md 
+                    <a href="./about.html" class="inline-block px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-md 
                  hover:bg-primary hover:text-white transition duration-300">
                         Read Stories
                     </a>
@@ -369,7 +377,7 @@
 
     <!-- Our products -->
 
-    <section class="max-w-7xl mx-auto px-6 py-16">
+    <section id="product" class="max-w-7xl mx-auto px-6 py-16">
         <!-- Heading -->
         <div class="text-center mb-12">
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Our <span class="text-primary">Products</span></h2>
@@ -390,10 +398,12 @@
                         Our gas-based gensets deliver eco-friendly power with reduced emissions, low operating costs,
                         and high efficiency—ideal for industries and commercial applications.
                     </p>
-                    <button
-                        class="flex mx-auto mt-6  hover:bg-primary text-primary border border-blue-600 hover:text-white  py-2 px-5 focus:outline-none rounded">
-                        See all
-                    </button>
+                    <a href="./product.html">
+                        <button
+                            class="flex mx-auto mt-6  hover:bg-primary text-primary border border-blue-600 hover:text-white  py-2 px-5 focus:outline-none rounded">
+                            See all
+                        </button>
+                    </a>
                 </div>
 
                 <!-- Diesel Gensets -->
@@ -408,10 +418,12 @@
                         Built for reliability and durability, our diesel gensets provide uninterrupted power supply for
                         heavy-duty applications, ensuring performance when it matters most.
                     </p>
-                    <button
-                        class="flex mx-auto mt-6  hover:bg-primary text-primary border border-blue-600 hover:text-white  py-2 px-5 focus:outline-none rounded">
-                        See all
-                    </button>
+                    <a href="./product.html">
+                        <button
+                            class="flex mx-auto mt-6  hover:bg-primary text-primary border border-blue-600 hover:text-white  py-2 px-5 focus:outline-none rounded">
+                            See all
+                        </button>
+                    </a>
                 </div>
 
                 <!-- Solar Panel -->
@@ -426,10 +438,12 @@
                         Harness the sun’s energy with our high-quality solar panels, designed for maximum efficiency and
                         durability to help you save on electricity and go green.
                     </p>
-                    <button
-                        class="flex mx-auto mt-6  hover:bg-primary text-primary border border-blue-600 hover:text-white  py-2 px-5 focus:outline-none rounded">
-                        See all
-                    </button>
+                    <a href="./product.html">
+                        <button
+                            class="flex mx-auto mt-6  hover:bg-primary text-primary border border-blue-600 hover:text-white  py-2 px-5 focus:outline-none rounded">
+                            See all
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -437,7 +451,7 @@
 
     <!-- Contact us  -->
 
-    <section class="text-gray-600 body-font relative bg-gray-700">
+    <section id="contact" class="text-gray-600 body-font relative bg-gray-700">
         <div class="flex flex-col justify-center pt-10 items-center">
             <h2 class="text-3xl sm:text-4xl font-bold text-white">Contact <span class="text-primary">Us</span>
             </h2>
@@ -506,16 +520,33 @@
             </div>
         </div>
     </section>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function () {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                alert("Please fill in all fields before sending.");
+                return;
+            }
+
+            // Redirect to Gmail with prefilled values
+            const subject = encodeURIComponent("Contact");
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            window.location.href = `https://mail.google.com/mail/?view=cm&to=alok48ax@gmail.com&su=${subject}&body=${body}`;
+        });
+    </script>
 
 
-    <footer class="bg-gray-800 text-white pt-12">
+    <footer class="bg-gray-800 text-white pt-12 lg:pr-10 ">
         <div
-            class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center md:text-left">
+            class="w-full max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center md:text-left">
 
             <!-- Company Info -->
             <div class="flex flex-col items-center md:items-start gap-5">
-                <img src="./assets/footer.png" alt="Logo" class="w-45">
-                <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                <img src="./assets/footer.png" alt="Logo">
+                <p class="text-gray-300 leading-relaxed text-sm md:text-base lg:text-left">
                     Delivering solar, generator, and electrical solutions since 2018.
                 </p>
             </div>
@@ -524,10 +555,10 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2 text-sm md:text-base">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">About Us</a></li>
-                    <li><a href="#" class="hover:underline">Products</a></li>
-                    <li><a href="#" class="hover:underline">Contact</a></li>
+                    <li><a href="./index.html" class="hover:underline">Home</a></li>
+                    <li><a href="./about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="./product.html" class="hover:underline">Products</a></li>
+                    <li><a href="./contact.html" class="hover:underline">Contact</a></li>
                 </ul>
             </div>
 
@@ -535,34 +566,38 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Products</h3>
                 <ul class="space-y-2 text-sm md:text-base">
-                    <li><a href="#" class="hover:underline">Solar Panels</a></li>
-                    <li><a href="#" class="hover:underline">Generators</a></li>
-                    <li><a href="#" class="hover:underline">Electrical Items</a></li>
-                    <li><a href="#" class="hover:underline">Batteries & Storage</a></li>
+                    <li><a href="./product.html" class="hover:underline">Solar Panels</a></li>
+                    <li><a href="./product.html" class="hover:underline">Diesel Genset</a></li>
+                    <li><a href="./product.html" class="hover:underline">Gas Genset</a></li>
                 </ul>
             </div>
 
             <!-- Contact -->
-            <div>
+            <div class="">
                 <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
                 <div class="space-y-2 text-sm md:text-base text-gray-300">
-                    <p><i class="fa-solid fa-house mr-2"></i>158, Sec 16 , Faridabad, Haryana 121002</p>
+                    <p class="whitespace-nowrap"><i class="fa-solid fa-house mr-2"></i>158, Sec 16, Faridabad, Haryana
+                        121002</p>
                     <p><i class="fa-solid fa-phone mr-2"></i>+91 8130320826</p>
-                    <p><i class="fa-solid fa-envelope mr-2"></i>info@oceanofcurrentgenerations.com</p>
-                    <p><i class="fa-solid fa-building mr-2"></i>OCEAN OF CURRENT GENERATION (OPC) PRIVATE LIMITED</p>
+                    <p class="whitespace-nowrap"><i class="fa-solid fa-envelope mr-2"></i>info@oceanofcurrentgenerations.com</p>
+                    <p class="whitespace-nowrap"><i class="fa-solid fa-building mr-2"></i>OCEAN OF CURRENT GENERATION
+                        (OPC) PRIVATE LIMITED</p>
                     <p><i class="fa-solid fa-money-bill mr-2"></i>GST No.: 06AAECO6947K1ZZ</p>
                 </div>
 
+
                 <!-- Social Icons -->
                 <div class="flex justify-center md:justify-start gap-5 mt-5 text-xl">
-                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/16x1eVcfDn/" class="hover:text-gray-400"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ocean-of-current-generation-opc-pvt-ltd-ab6645383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="hover:text-gray-400"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/oceanofcurrent?utm_source=qr&igsh=bTcyZnN1MzlmdzR2"
+                        class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
         </div>
+
 
         <!-- Bottom Bar -->
         <div
